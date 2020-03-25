@@ -1,6 +1,6 @@
 ﻿using System;
 //Roberto Alcazar Morales
-//
+//Alejandro Conde Gómez
 //
 //
 
