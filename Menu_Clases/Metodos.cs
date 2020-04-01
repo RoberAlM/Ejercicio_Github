@@ -50,9 +50,9 @@ namespace Menu_Clases
             Console.WriteLine("Escribe el nombre");
             p[cantidad].nombre = Console.ReadLine();
             Console.WriteLine("Escribe el género");
-            p[cantidad].genero = Convert.ToInt32(Console.ReadLine());
+            p[cantidad].genero = Console.ReadLine();
             Console.WriteLine("Escribe la duración");
-            p[cantidad].duracion = Console.ReadLine();
+            p[cantidad].duracion = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Escribe el tamaño");
             p[cantidad].size = Convert.ToInt32(Console.ReadLine());
             cantidad++;
