@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
 namespace Menu_Clases
 {
     class Metodos
@@ -13,25 +12,22 @@ namespace Menu_Clases
             public int duracion;    //minutos
             public int size;        //GB
         }
-
         public void BuscarApartirDeLetra(peliculas[] p, int cantidad)
         {
 
-            Console.Write("Busqueda: ");
+            Console.Write("Búsqueda: ");
             string datoBusqueda = Console.ReadLine();
             for (int i = 0; i < cantidad; i++)
             {
                 if (p[i].nombre.IndexOf(datoBusqueda, 1, datoBusqueda.Length) >= 0)
                 {
                     Console.WriteLine("Nombre: {0}", p[i].nombre);
-                    Console.WriteLine("Genero: {0}", p[i].genero);
-                    Console.WriteLine("Duracion: {0}", p[i].duracion);
+                    Console.WriteLine("Género: {0}", p[i].genero);
+                    Console.WriteLine("Duración: {0}", p[i].duracion);
                     Console.WriteLine("Tamaño: {0}", p[i].size);
                 }
             }
         }
-
-
         public void BuscarPorTamaño(peliculas[] p, int cantidad)
         {
             int tamaño;
@@ -43,17 +39,20 @@ namespace Menu_Clases
                 if (p[i].size == tamaño)
                 {
                     Console.WriteLine("Nombre: {0}", p[i].nombre);
-                    Console.WriteLine("Genero: {0}", p[i].genero);
-                    Console.WriteLine("Duracion: {0}", p[i].duracion);
+                    Console.WriteLine("Género: {0}", p[i].genero);
+                    Console.WriteLine("Duración: {0}", p[i].duracion);
                     Console.WriteLine("Tamaño: {0}", p[i].size);
                 }
             }
         }
-
         public void AnadirDatos(peliculas[] p, ref int cantidad)
         {
             Console.WriteLine("Escribe el nombre");
             p[cantidad].nombre = Console.ReadLine();
+            Console.WriteLine("Escribe el género");
+            p[cantidad].genero = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Escribe la duración");
+            p[cantidad].duracion = Console.ReadLine();
             Console.WriteLine("Escribe el tamaño");
             p[cantidad].size = Convert.ToInt32(Console.ReadLine());
             cantidad++;
@@ -62,12 +61,8 @@ namespace Menu_Clases
         {
             for (int i = 0; i < cantidad; i++)
             {
-                Console.WriteLine("Nombre: {0}, tamaño: {1}", p[i].nombre, p[i].size);
+                Console.WriteLine("Nombre: {0}, género: {1}, duracion: {2}, tamaño: {3}", p[i].nombre,p[i].genero,p[i].duracion,p[i].size);
             }
-
         }
-
-
-
     }
 }
