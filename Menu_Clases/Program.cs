@@ -1,7 +1,7 @@
 ﻿using System;
 //Roberto Alcazar Morales
 //Alejandro Conde Gómez
-//
+//El David Sánchez Ortiz
 //
 
 //Prepara un programa que permita acceder a las siguientes funciones:
