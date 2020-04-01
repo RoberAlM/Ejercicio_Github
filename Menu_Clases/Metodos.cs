@@ -26,5 +26,20 @@ namespace Menu_Clases
                 }
             }
         }
+        public void AnadirDatos(dato[]d,ref int cantidad)
+        {
+            Console.WriteLine("Escribe el nombre");
+            d[cantidad].nombre = Console.ReadLine();
+            Console.WriteLine("Escribe el tamaño");
+            d[cantidad].size = Convert.ToInt32(Console.ReadLine());
+            cantidad++;
+        }
+        public void MostrarDatos(dato[]d,int cantidad)
+        {
+            for(int i = 0; i < cantidad.Lenght; i++)
+            {
+                Console.WriteLine("Nombre: {0}, tamaño: {1}", d[i].nombre, d[i].size);
+            }
+        }
     }
 }
