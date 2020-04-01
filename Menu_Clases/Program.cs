@@ -18,7 +18,7 @@ namespace Menu_Clases
     {
         static void Main(string[] args)
         {
-            Metodos.dato[] d = new Metodos.dato[4];
+            Metodos.peliculas[] d = new Metodos.peliculas[4];
 
 
             
