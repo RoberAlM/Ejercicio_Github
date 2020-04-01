@@ -18,7 +18,12 @@ namespace Menu_Clases
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Metodos.dato[] d = new Metodos.dato[4];
+
+
+            
+
+            Console.ReadLine();
         }
     }
 }

@@ -1,26 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-struct dato
+
+namespace Menu_Clases
 {
-    public string nombre;
-    public int size;
-}
-class Metodos
-{
-    public void BuscarApartirDeLetra(int cantidad)
+    class Metodos
     {
-        dato[] Dato = new dato[50];
-        Console.Write("Busqueda: ");
-        string datoBusqueda = Console.ReadLine();
-        for (int i = 0; i < cantidad; i++)
+        public struct dato
         {
-            if (Dato[i].nombre.IndexOf(datoBusqueda, 1, datoBusqueda.Length) >= 0)
+            public string nombre;
+            public int size;
+        }        
+
+        public void BuscarApartirDeLetra(dato[] d, int cantidad)
+        {
+
+            Console.Write("Busqueda: ");
+            string datoBusqueda = Console.ReadLine();
+            for (int i = 0; i < cantidad; i++)
             {
-                Console.WriteLine("Nombre: {0}", Dato[i].nombre);
-                Console.WriteLine("Tamaño: {0}", Dato[i].size);
+                if (d[i].nombre.IndexOf(datoBusqueda, 1, datoBusqueda.Length) >= 0)
+                {
+                    Console.WriteLine("Nombre: {0}", d[i].nombre);
+                    Console.WriteLine("Tamaño: {0}", d[i].size);
+                }
             }
         }
     }
 }
-
