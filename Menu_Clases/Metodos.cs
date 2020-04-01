@@ -36,7 +36,7 @@ namespace Menu_Clases
         }
         public void MostrarDatos(dato[]d,int cantidad)
         {
-            for(int i = 0; i < cantidad.Lenght; i++)
+            for(int i = 0; i < cantidad; i++)
             {
                 Console.WriteLine("Nombre: {0}, tamaño: {1}", d[i].nombre, d[i].size);
             }
