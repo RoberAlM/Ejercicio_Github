@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\Ceci\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Ejercicio_Github\\Menu_Clases\\Menu_Clases.csproj",
+      "projectUniqueName": "C:\\Users\\Ceci\\OneDrive\\Documentos\\GitHub\\Ejercicio_Github\\Menu_Clases\\Menu_Clases.csproj",
       "projectName": "Menu_Clases",
-      "projectPath": "C:\\Users\\Usuario\\Documents\\Ejercicio_Github\\Menu_Clases\\Menu_Clases.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Documents\\Ejercicio_Github\\Menu_Clases\\obj\\",
+      "projectPath": "C:\\Users\\Ceci\\OneDrive\\Documentos\\GitHub\\Ejercicio_Github\\Menu_Clases\\Menu_Clases.csproj",
+      "packagesPath": "C:\\Users\\Ceci\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ceci\\OneDrive\\Documentos\\GitHub\\Ejercicio_Github\\Menu_Clases\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ceci\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

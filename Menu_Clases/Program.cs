@@ -20,42 +20,43 @@ namespace Menu_Clases
         {
             Metodos.peliculas[] d = new Metodos.peliculas[4];
             int cantidad = 0;
+            int respuesta = 0;
             Metodos m = new Metodos();
+
+            do
+            {
             Console.WriteLine("#### Menú ####");
             Console.WriteLine("[1] Añadir un dato");
             Console.WriteLine("[2] Mostrar todos los datos");
             Console.WriteLine("[3] Mostrar datos a partir de un determinado dato de tamaño");
             Console.WriteLine("[4]  Búsqueda parcial a partir de una letra o subconjunto de letras");
             Console.WriteLine("[5] Salir");
-            int respuesta = Convert.ToInt32(Console.ReadLine());
-            if (respuesta == 1)
+            respuesta = Convert.ToInt32(Console.ReadLine());
+           
+            switch (respuesta)
             {
-                m.AnadirDatos(d ,ref cantidad);
-                
-            }
-            else if (respuesta == 2)
-            {
-                m.MostrarDatos(d, cantidad);
-            }
-            else if (respuesta == 3)
-            {
-                m.BuscarPorTamaño(d, cantidad);
-            }
-            else if (respuesta == 4)
-            {
-                m.BuscarApartirDeLetra(d, cantidad);
-            }
-            else if (respuesta == 5)
-            {
-                Console.WriteLine("Saliendo...");
-         
-            }
-            else
-            {
-                Console.WriteLine("Respuesta no valida");
-            }
+                case 1: 
+                    m.AnadirDatos(d, ref cantidad);
+                    break;
+                case 2:
+                    m.MostrarDatos(d, cantidad);
+                    break;
+                case 3:
+                    m.BuscarPorTamaño(d, cantidad);
+                    break;
+                case 4:
+                    m.BuscarApartirDeLetra(d, cantidad);
+                    break;
+                case 5:
+                    m.Salir();
+                    break;
 
 
+                default: Console.WriteLine("Respuesta no válida. Inténtalo de nuevo.");
+                    break;
+            }
+
+            } while (respuesta >= 1 && respuesta <= 5);
 
 
 

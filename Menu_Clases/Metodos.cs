@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 namespace Menu_Clases
 {
     class Metodos
@@ -14,9 +15,18 @@ namespace Menu_Clases
         }
         public void BuscarApartirDeLetra(peliculas[] p, int cantidad)
         {
+            Console.Write("Búsqueda a partir de una letra: ");
 
-            Console.Write("Búsqueda: ");
-            string datoBusqueda = Console.ReadLine();
+            string datoBusqueda= "";
+            try
+            { datoBusqueda = Console.ReadLine(); }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error, el dato introducido no es correcto. Inténtalo de nuevo {0}.", e.Message);
+                
+            }
+           
+            
             for (int i = 0; i < cantidad; i++)
             {
                 if (p[i].nombre.IndexOf(datoBusqueda, 1, datoBusqueda.Length) >= 0)
@@ -30,9 +40,14 @@ namespace Menu_Clases
         }
         public void BuscarPorTamaño(peliculas[] p, int cantidad)
         {
-            int tamaño;
+            int tamaño= 0;
             Console.Write("Introduce tamaño para buscar ficheros por ese tamaño: ");
-            tamaño = int.Parse(Console.ReadLine());
+            try
+            { tamaño = int.Parse(Console.ReadLine()); }
+            catch (FormatException)
+            {
+                Console.WriteLine("Error, el dato introducido no es correcto. Inténtalo de nuevo.");
+            }
 
             for (int i = 0; i < cantidad; i++)
             {
@@ -63,6 +78,10 @@ namespace Menu_Clases
             {
                 Console.WriteLine("Nombre: {0}, género: {1}, duracion: {2}, tamaño: {3}", p[i].nombre,p[i].genero,p[i].duracion,p[i].size);
             }
+        }
+        public void Salir()
+        {
+            Environment.Exit(0);
         }
     }
 }

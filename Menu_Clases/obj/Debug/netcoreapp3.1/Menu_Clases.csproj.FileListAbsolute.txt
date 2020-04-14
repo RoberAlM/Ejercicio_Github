@@ -9,3 +9,16 @@ C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\
 C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.AssemblyInfo.cs
 C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.dll
 C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.pdb
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.exe
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.deps.json
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.runtimeconfig.json
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.runtimeconfig.dev.json
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.dll
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.pdb
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.csprojAssemblyReference.cache
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.csproj.CoreCompileInputs.cache
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.AssemblyInfoInputs.cache
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.AssemblyInfo.cs
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.dll
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.pdb
+C:\Users\Ceci\OneDrive\Documentos\GitHub\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.genruntimeconfig.cache
