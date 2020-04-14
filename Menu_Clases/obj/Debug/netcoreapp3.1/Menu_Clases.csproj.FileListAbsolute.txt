@@ -1,0 +1,11 @@
+C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.exe
+C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.deps.json
+C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.runtimeconfig.json
+C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.runtimeconfig.dev.json
+C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.dll
+C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\bin\Debug\netcoreapp3.1\Menu_Clases.pdb
+C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.AssemblyInfo.cs
+C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.dll
+C:\Users\Usuario\Documents\Ejercicio_Github\Menu_Clases\obj\Debug\netcoreapp3.1\Menu_Clases.pdb
