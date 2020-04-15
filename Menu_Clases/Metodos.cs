@@ -15,16 +15,38 @@ namespace Menu_Clases
         }
         public void BuscarApartirDeLetra(peliculas[] p, int cantidad)
         {
-            Console.Write("Búsqueda a partir de una letra: ");
+                string datoBusqueda = "";
+            do
 
-            string datoBusqueda= "";
-            try
-            { datoBusqueda = Console.ReadLine(); }
-            catch (Exception e)
             {
-                Console.WriteLine("Error, el dato introducido no es correcto. Inténtalo de nuevo {0}.", e.Message);
+                Console.Write("Búsqueda a partir de una letra: ");
+
+                datoBusqueda = Console.ReadLine();
+
+                switch (datoBusqueda)
+                {
+                    case "0":
+                        Console.WriteLine("Error, dato introducido incorrecto. Inténtalo de nuevo.");
+                        break;
+                    case "1": goto case "0";
+                    case "2": goto case "0";
+                    case "3": goto case "0";
+                    case "4": goto case "0";
+                    case "5": goto case "0";
+                    case "6": goto case "0";
+                    case "7": goto case "0";
+                    case "8": goto case "0";
+                    case "9": goto case "0";
+                    case " ": goto case "0";
+                    case ".": goto case "0";
+                    case ",": goto case "0";
+                    case ":": goto case "0";
+                    case ";": goto case "0";
+                }
+
                 
             }
+            while (datoBusqueda != "a" && datoBusqueda != "b" && datoBusqueda != "c");
            
             
             for (int i = 0; i < cantidad; i++)
