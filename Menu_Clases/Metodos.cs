@@ -15,72 +15,82 @@ namespace Menu_Clases
         }
         public void BuscarApartirDeLetra(peliculas[] p, int cantidad)
         {
-                string datoBusqueda = "";
-            do
+            if (cantidad > 0)
 
             {
-                Console.Write("Búsqueda a partir de una letra: ");
-
-                datoBusqueda = Console.ReadLine();
-
-                switch (datoBusqueda)
+                char datoBusqueda = ' ';
+                bool error1 = false;
+                do
                 {
-                    case "0":
-                        Console.WriteLine("Error, dato introducido incorrecto. Inténtalo de nuevo.");
-                        break;
-                    case "1": goto case "0";
-                    case "2": goto case "0";
-                    case "3": goto case "0";
-                    case "4": goto case "0";
-                    case "5": goto case "0";
-                    case "6": goto case "0";
-                    case "7": goto case "0";
-                    case "8": goto case "0";
-                    case "9": goto case "0";
-                    case " ": goto case "0";
-                    case ".": goto case "0";
-                    case ",": goto case "0";
-                    case ":": goto case "0";
-                    case ";": goto case "0";
+
+                    Console.Write("Búsqueda a partir de una letra: ");
+                    try
+                    {
+
+                        datoBusqueda = Convert.ToChar(Console.ReadLine().ToLower());
+                        error1 = false;
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("Error, el dato introducido no es correcto. Por favor, introduce una letra.");
+                        error1 = true;
+                    }
                 }
+                while (error1 == true);
 
-                
-            }
-            while (datoBusqueda != "a" && datoBusqueda != "b" && datoBusqueda != "c");
-           
-            
-            for (int i = 0; i < cantidad; i++)
-            {
-                if (p[i].nombre.IndexOf(datoBusqueda, 1, datoBusqueda.Length) >= 0)
+
+                for (int i = 0; i < cantidad; i++)
                 {
-                    Console.WriteLine("Nombre: {0}", p[i].nombre);
-                    Console.WriteLine("Género: {0}", p[i].genero);
-                    Console.WriteLine("Duración: {0}", p[i].duracion);
-                    Console.WriteLine("Tamaño: {0}", p[i].size);
+                    if (p[i].nombre[0] == datoBusqueda)
+                    {
+                        Console.WriteLine("Nombre: {0}", p[i].nombre);
+                        Console.WriteLine("Género: {0}", p[i].genero);
+                        Console.WriteLine("Duración: {0}", p[i].duracion);
+                        Console.WriteLine("Tamaño: {0}", p[i].size);
+                    }
                 }
             }
+            else Console.WriteLine("No hay archivos guardados.");
         }
         public void BuscarPorTamaño(peliculas[] p, int cantidad)
-        {
-            int tamaño= 0;
-            Console.Write("Introduce tamaño para buscar ficheros por ese tamaño: ");
-            try
-            { tamaño = int.Parse(Console.ReadLine()); }
-            catch (FormatException)
-            {
-                Console.WriteLine("Error, el dato introducido no es correcto. Inténtalo de nuevo.");
-            }
 
-            for (int i = 0; i < cantidad; i++)
+        {
+            if (cantidad > 0)
             {
-                if (p[i].size == tamaño)
+                int tamaño = 0;
+                bool error = false;
+
+                do
                 {
-                    Console.WriteLine("Nombre: {0}", p[i].nombre);
-                    Console.WriteLine("Género: {0}", p[i].genero);
-                    Console.WriteLine("Duración: {0}", p[i].duracion);
-                    Console.WriteLine("Tamaño: {0}", p[i].size);
+                    Console.Write("Introduce tamaño para buscar ficheros por ese tamaño: ");
+
+                    try
+                    {
+                        tamaño = int.Parse(Console.ReadLine());
+                        error = false;
+
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("Error, el dato introducido no es correcto. Inténtalo de nuevo.");
+                        error = true;
+                    }
+
+                }
+                while (error == true);
+
+                for (int i = 0; i < cantidad; i++)
+                {
+                    if (p[i].size == tamaño)
+                    {
+                        Console.WriteLine("Nombre: {0}", p[i].nombre);
+                        Console.WriteLine("Género: {0}", p[i].genero);
+                        Console.WriteLine("Duración: {0}", p[i].duracion);
+                        Console.WriteLine("Tamaño: {0}", p[i].size);
+                    }
                 }
             }
+            else Console.WriteLine("No hay archivos guardados.");
         }
         public void AnadirDatos(peliculas[] p, ref int cantidad)
         {
@@ -95,11 +105,16 @@ namespace Menu_Clases
             cantidad++;
         }
         public void MostrarDatos(peliculas[] p, int cantidad)
-        {
-            for (int i = 0; i < cantidad; i++)
+            
+        { if (cantidad > 0)
             {
-                Console.WriteLine("Nombre: {0}, género: {1}, duracion: {2}, tamaño: {3}", p[i].nombre,p[i].genero,p[i].duracion,p[i].size);
+                Console.WriteLine("No hay archivos guardados.");
+                for (int i = 0; i < cantidad; i++)
+                {
+                    Console.WriteLine("Nombre: {0}, género: {1}, duracion: {2}, tamaño: {3}", p[i].nombre, p[i].genero, p[i].duracion, p[i].size);
+                }
             }
+        else Console.WriteLine("No hay archivos guardados.");
         }
         public void Salir()
         {
